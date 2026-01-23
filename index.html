@@ -1,167 +1,264 @@
-<!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Mbaimou Auxence NGREMMADJI</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="academicons-1.8.6/css/academicons.min.css"/>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="landing is-preload">
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mbaimou Auxence NGREMMADJI </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    #main{ 
+	  width:100%; 
+	  height:100vh; 
+    } 
+    .left-column{ 
+	  float:left; 
+	  width: 50%  
+    } 
+    .right-column{ 
+	  float:right; 
+	  width: 50%  
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fc;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem 3rem 2rem;
+      animation: fadeInDown 1.2s ease-in-out;
+      position: relative;
+    }
+    header img.profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    header img.profile-pic:hover {
+      transform: scale(1.05);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    header h2 {
+      font-weight: 300;
+      font-size: 1.2rem;
+      margin-top: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #2c5364;
+      padding: 0.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #f7d774;
+    }
+    section {
+      max-width: 900px;
+      /* margin: 1rem auto;*/
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Home page</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="research.html">Research </a></li>
-											<li><a href="projects.html">Projects</a></li>
-											<li><a href="resume.html"> Resume </a></li>
-											<li><a href ="contact.html"> Contact </a> </li>
+      padding: 1.5rem 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      animation: fadeInUp 1.2s ease;
+    }
+    
+    section h3 {
+      border-bottom: 2px solid #2c5364;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .skills-list, .contact-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .skills-list span, .contact-list a {
+      background: #e3edf5;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .skills-list span:hover, .contact-list a:hover {
+      transform: translateY(-5px);
+      background: #d2e4f5;
+    }
+    .contact-list a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #203a43;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-list a i {
+      color: #2c5364;
+      font-size: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #203a43;
+      color: white;
+      margin-top: 2rem;
+    }
 
-											
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-				<!-- Banner -->
-				<!----	<section id="banner"> -->
-					 <!---- <img src="images/profileWebSite.png"alt="Mbaimou Auxence NGREMMADJI" width="20%"
-					-->
-        		<!----	 height="auto"  class="center">
-					        <h1>Mbaimou Auxence Ngremmadji</h1>
-			 
-							<ul class="icons">
-							<html>
-							
-							 <p><a href="Ngremmadji_cv.pdf">Resume</a></p>
-							 </html>
-							
-							</ul>
-						</div>
-					-->	
-				<!----	</section> -->
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      header img.profile-pic { width: 120px; height: 120px; }
+      header h1 { font-size: 1.8rem; }
+      header h2 { font-size: 1rem; }
+      section { margin: 1rem; padding: 1rem; }
+      nav { flex-direction: column; }
+      nav a { margin: 0.3rem 0; }  
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2><br />
-								Welcome to my page!</h2>
-								<p><br />
-							
-										<blockquote> You may encounter many defeats, but you must not be defeated. 
-										In fact, it may be necessary to encounter defeats, so you can know who
-										 you are, what you can rise from, how you can still come out of it.~
-										Maya Angelou</blockquote>
-							</header>
+    </style>
+ </head>
+
+<body>
+  <header>
+    <img src="profile.png" alt="Mbaimou Auxence NGREMMADJI" class="profile-pic">
+    <h1>Mbaimou Auxence NGREMMADJI </h1>
+    <h2> Applied Mathematics • Magnetic Resonance Imaging • Image Processing  </h2>
+  
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#Certifications"> Certifications </a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div id="main"> 
+    <div class="left-column"> 
+      <section id="about">
+        <h3>About</h3>
+        <p>
+          Welcome to my personal page. I am a Postdoctoral fellow at IADI laboratory (CHRU Nancy and Université de Lorraine), in France. I work on bSSFP MR images. I focus on 
+          the estimation of MR parametric ma ps using the newly introduced bSSFP sequence called PLANET. 
+  
+          I was Ph.D. candidate at IADI laboratory, working on human placental MR images. I mainly contributed on super-resolution MR images reconstruction and the estimation of the IVIM 
+          (IntraVoxel Incoherent Motion) parameters.    
+        </p> 
+          
+        <p>
+        Prior to the Ph.D. journey, I obtained a master degree in mathematical modeling at Sorbonne University (Paris, France). I also hold a master degree in Mathematical engineering
+        at Aix-Marseille University (Marseille, France). I obtained a bachelor in Mathematics at Cheikh Anta Diop University (Dakar, Senegal).     
+        </p>
+        <p>
+        I am interested in super-resolution reconstruction, motion correction, deep learning, machine learning, and medical imaging. I am also open to others domains. I welcome news opportunities.  
+        </p>  
+  
+      </section>
+    
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="skills-list">
+          <span> Optimisation </span> <span>MRI</span> <span> Image Processing</span> <span> Deep Learning </span> <span>  Machine Learning</span> 
+          <span>Python</span>  <span> PyTorch </span>  <span> Matlab</span>
+          <span> R </span><span>Git</span><span>Docker</span>
+        </div>
+      </section>
+
+      <section id="resume">
+      <h3>Resume</h3>
+      <p>
+        Download my latest CV <a href="ngremmadji_resume.pdf" target="_blank">here</a>.
+      </p>
+      </section>
+
+      <section id="contact">
+    <h3>Contact</h3>
+    <div class="contact-list">
+      <a href="mailto:oxmbaimou@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
+      <a href="https://github.com/MNgremmadji" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+      <a href="https://linkedin.com/in/ngremmadji" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+    
+    </div>
+    </section>
+    </div> 
+
+    <div class="right-column"> 
+
+      <section id="projects">
+    <h3>Projects</h3>
+    <ul>
+      <li> <strong> Malaria Detection using Low-rank Adaption  </strong> </li>
+      <li> <strong> Bank Fraud Detection</strong> </li>
+      <li> <strong> Air Quality Index Forecasting </strong></li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h3>Publications</h3>
+    <ul>
+
+      <li>  <u> Mbaimou Auxence NGREMMADJI</u>, Freddy ODILLE, Charline BERTHOLDT, Marine BEAUMONT, Olivier MOREL and Bailiang Chen. 
+									Anatomically Guided Motion Correction Framework for Placentaal IVIM Parameters Estimation. IEEE Access. <a href="https://ieeexplore.ieee.org/document/11230671"> DOI: 
+                    10.1109/ACCESS.2025.3629631</a> 
+
+      <li>  <u> Mbaimou Auxence NGREMMADJI</u>, Freddy ODILLE, Charline BERTHOLDT, Marine BEAUMONT, and Bailiang Chen. 
+									A Variational Inference Super-Resolution Method with Beltrami Regularization for In-Vivo MR Placenta Images. 
+									In 2024 IEEE International Symposium on Biomedical Imaging (ISBI). <a href = "https://ieeexplore.ieee.org/document/10635630">  DOI: 10.1109/ISBI56570.2024.10635630</a>               
 			
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img  style="max-width: 45%; max-height: 45%;"   src="images/profileWebSite.png" align="right"/></div>
-							<div class="content">
-							 	<h2>About Me<br />
-								</h2>
-								<p> I am a Ph.D. student in IADI laboratory (Université de Lorraine). 
-									My Ph.D. thesis is entitled Quantitative MRI for human placental vascularization. Mainly, 
-									I work on super-resolution reconstruction, IVIM (Intravoxel Incoherent Motion) parameters estimation, 
-									image registration and ex vivo placental vascular analysis (placental vascular segmentation, arteries/vein separation). 
-									I was fellow in <a href = " https://abidlabs.github.io/fellowship/">Fatima Fellowship </a>, a pre-doctoral program. 
-									I was mentored by <a href="https://marouenbg.github.io/" > Marouen Ben Guebila (Harvad University). </a>
-									
-								<!----	and <a href="https://www.linkedin.com/in/mfbalin">Muhammed Fatih Balin (Georgia Institute of Technology)</a>. I received my master degree in <a href = "https://www.ljll.math.upmc.fr/MathModel/">Mathematical Modeling from the Sorbonne Université (also known as
-								as Université Pierre et Marie Curie </a>. Prior to that, I got a master degree in Mathematical Engineering at the Aix-Marseille Université.
-								 I have got my bachelor degree in mathematics at the Université Cheikh Anta Diop in Dakar, in Senegal.</p>
-								 <a href="personal.html" class="button primary small">Learn More</a>
+      
+      <li> Bailiang CHEN, <u> Mbaimou Auxence NGREMMADJI</u>, Olivier. Editorial for "A Hybrid Model for Fetal Growth Restriction Assessment
+								by Automatic Placental Radiomics on T2-weighted MRI and Multifeature Fusion". J Magn Reson Imaging. 2025. 
+								<a href="https://onlinelibrary.wiley.com/doi/10.1002/jmri.29418"> DOI: 10.1002/jmri.29418 </a>
 								
-								-->
-						
-								<h2>Research Interests<br />
-								</h2>
-									<p> My research interests are : 
-									<li> super-resolution reconstruction </li>
-									<li>  Image registration </li>		
-									<li> Quantitative MR parameters estimation (IVIM, T2-w, T2*w) </li>
-									<li>  Image classification, image segmentation and object detection </li>
-									</p>
-
-
-									
-									
-							</div> 
-						</section>
-						
-				
-						<!----
-						<section class="spotlight">
-							<div class="image"><img style="max-width: 45%; max-height: 45%;"  src="images/ml3.png" align = "top"></div><div class="content">
-								<h2>Projects</h2>
 								
-								<a href="projects.html" class="button primary small">Learn More</a>
+      <li>  <u> Mbaimou Auxence NGREMMADJI</u>, Freddy ODILLE, Charline BERTHOLDT, Marine BEAUMONT, Olivier MOREL and Bailiang Chen. 
+											Hybrid Super-resolution Method for Placental MR Images. In Preparation. 
 
-							</div>
-						</section>
-					-->
-
-					</section>
-
-					<!----
-					<section id="footer2">
-
-						<h2> Contact</h2>
-						<i class="fa fa-inbox"></i> ngremmadji[at]mbaimou.space
-						<ul class="icons">
-							<li><a href="https://twitter.com/MnAuxence" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/MNgremmadji" class="icon brands fa-github"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.linkedin.com/in/ngremmadji"><span class="icon brands fa-linkedin"><a ></a></li> 
-
-							<li><a href="mailto:ngremmadji@mbaimou.space" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-					-->
-
-
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						
-						<ul class="copyright">
-							<li>&copy; Mbaimou Auxence Ngremmadji </li>
-							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  </section>
+  <section id="Certifications">
+      <h3>  Certifications</h3>  
+      <ul>
+      <li>  <a href="images/udacity.pdf"> Foundation of Generative AI - Udacity </a> </li>
+      <li>  <a href="images/MedICSS2022.pdf"> Medical Image Computing Summer School (MedICSS) - University College London (UCL) </a>  </li>
+      <li>  <a href="images/DLIC-FX-01 Certificate _ Deep Learning Institute.pdf"> Fundamentals of Deep Learning - Nividia Deep Learning Institute </a> </li>
+      <li>  <a href="images/DL_coursera.pdf"> Deep Learning Specialization - DeepLearning.AI </a> </li> 
+    </ul>  
+    <tr>
+    </section>
+  </div>
+</body>
+<footer id="footer">
+    &copy; 2025 Mbaimou Auxence NGREMMADJI. All Rights Reserved.
+</footer>
 </html>

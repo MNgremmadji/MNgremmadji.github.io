@@ -5,20 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mbaimou Auxence NGREMMADJI </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
 
-    #main{ 
-	  width:100%; 
-	  height:100vh; 
-    } 
-    .left-column{ 
-	  float:left; 
-	  width: 50%  
-    } 
-    .right-column{ 
-	  float:right; 
-	  width: 50%  
-    }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
@@ -27,6 +16,7 @@
       color: #333;
       scroll-behavior: smooth;
     }
+
     header {
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
@@ -45,6 +35,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       transition: transform 0.3s ease;
     }
+
     header img.profile-pic:hover {
       transform: scale(1.05);
     }
@@ -57,6 +48,7 @@
       font-size: 1.2rem;
       margin-top: 0;
     }
+
     nav {
       display: flex;
       justify-content: center;
@@ -74,9 +66,10 @@
     nav a:hover {
       color: #f7d774;
     }
+
     section {
-      max-width: 900px;
-      /* margin: 1rem auto;*/
+      max-width: 1200px;
+      margin: 1rem auto;
 
       padding: 1.5rem 2rem;
       background: white;
@@ -84,7 +77,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       animation: fadeInUp 1.2s ease;
     }
-    
+
     section h3 {
       border-bottom: 2px solid #2c5364;
       padding-bottom: 0.5rem;
@@ -142,9 +135,9 @@
       section { margin: 1rem; padding: 1rem; }
       nav { flex-direction: column; }
       nav a { margin: 0.3rem 0; }  
-
-    </style>
- </head>
+  
+  </style>
+</head>
 
 <body>
   <header>
@@ -164,10 +157,9 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <div id="main"> 
-    <div class="left-column"> 
-      <section id="about">
-        <h3>About</h3>
+  
+  <section id="about">
+      <h3>About</h3>
         <p>
           Welcome to my personal page. I am a Postdoctoral fellow at IADI laboratory (CHRU Nancy and Université de Lorraine), in France. I work on bSSFP MR image, 
           focusing on the estimation of MR parametric maps using the newly introduced bSSFP sequence called PLANET. 
@@ -184,38 +176,25 @@
         I am interested in super-resolution reconstruction, motion correction, deep learning, machine learning, and medical imaging. I am also open to other domains. I welcome news opportunities.  
         </p>  
   
-      </section>
-    
-      <section id="skills">
+  </section>
+
+  <section id="skills">
         <h3>Skills</h3>
         <div class="skills-list">
           <span> Optimisation </span> <span>MRI</span> <span> Image Processing</span> <span> Deep Learning </span> <span>  Machine Learning</span> 
           <span>Python</span>  <span> PyTorch </span>  <span> Matlab</span>
           <span> R </span><span>Git</span><span>Docker</span>
         </div>
-      </section>
+  </section>
 
-      <section id="resume">
+  <section id="resume">
       <h3>Resume</h3>
       <p>
         Download my latest CV <a href="ngremmadji_resume.pdf" target="_blank">here</a>.
       </p>
-      </section>
+  </section>
 
-      <section id="contact">
-    <h3>Contact</h3>
-    <div class="contact-list">
-      <a href="mailto:oxmbaimou@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
-      <a href="https://github.com/MNgremmadji" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
-      <a href="https://linkedin.com/in/ngremmadji" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-    
-    </div>
-    </section>
-    </div> 
-
-    <div class="right-column"> 
-
-      <section id="projects">
+  <section id="projects">
     <h3>Projects</h3>
     <ul>
       <li> <strong> Malaria Detection using Low-rank Adaption  </strong> </li>
@@ -256,9 +235,20 @@
     </ul>  
     <tr>
     </section>
-  </div>
-</body>
-<footer id="footer">
+
+
+
+  <section id="contact">
+    <h3>Contact</h3>
+    <div class="contact-list">
+      <a href="mailto:oxmbaimou@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
+      <a href="https://github.com/MNgremmadji" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+      <a href="https://linkedin.com/in/ngremmadji" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+    
+    </div>
+  </section>
+  </body>
+  <footer id="footer">
     &copy; 2026 Mbaimou Auxence NGREMMADJI. All Rights Reserved.
 </footer>
-</html>
+ </html> 

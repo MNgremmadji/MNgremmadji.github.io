@@ -5,9 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mbaimou Auxence NGREMMADJI </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <style>
 
+    #main{ 
+	  width:100%; 
+	  height:100vh; 
+    } 
+    .left-column{ 
+	  float:left; 
+	  width: 50%  
+    } 
+    .right-column{ 
+	  float:right; 
+	  width: 50%  
+    }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
@@ -16,7 +27,6 @@
       color: #333;
       scroll-behavior: smooth;
     }
-
     header {
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
@@ -35,7 +45,6 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       transition: transform 0.3s ease;
     }
-
     header img.profile-pic:hover {
       transform: scale(1.05);
     }
@@ -48,7 +57,6 @@
       font-size: 1.2rem;
       margin-top: 0;
     }
-
     nav {
       display: flex;
       justify-content: center;
@@ -66,10 +74,9 @@
     nav a:hover {
       color: #f7d774;
     }
-
     section {
-      max-width: 1200px;
-      margin: 1rem auto;
+      max-width: 900px;
+      /* margin: 1rem auto;*/
 
       padding: 1.5rem 2rem;
       background: white;
@@ -77,7 +84,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       animation: fadeInUp 1.2s ease;
     }
-
+    
     section h3 {
       border-bottom: 2px solid #2c5364;
       padding-bottom: 0.5rem;
@@ -135,16 +142,15 @@
       section { margin: 1rem; padding: 1rem; }
       nav { flex-direction: column; }
       nav a { margin: 0.3rem 0; }  
-  
-  </style>
-</head>
+
+    </style>
+ </head>
 
 <body>
   <header>
-    <img src="profile.png" alt="Mbaimou Auxence NGREMMADJI" class="profile-pic">
+    <img src="profileNew.png" alt="Mbaimou Auxence NGREMMADJI" class="profile-pic">
     <h1>Mbaimou Auxence NGREMMADJI </h1>
-    <h2> Applied Mathematics • Magnetic Resonance Imaging • Image Processing  </h2>
-  
+    <h2> Postdoctoral  Research Fellow </h2>
   </header>
 
   <nav>
@@ -157,44 +163,62 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  
-  <section id="about">
-      <h3>About</h3>
+  <div id="main"> 
+    <div class="left-column"> 
+      <section id="about">
+        <h3>About</h3>
         <p>
-          Welcome to my personal page. I am a Postdoctoral fellow at IADI laboratory (CHRU Nancy and Université de Lorraine), in France. I work on bSSFP MR image, 
-          focusing on the estimation of MR parametric maps using the newly introduced bSSFP sequence called PLANET. 
-  
-          I was Ph.D. candidate at IADI laboratory (from October 2021 to May 2025), working on human placental MR images. I mainly contributed on super-resolution MR images reconstruction and the estimation of the IVIM 
-          (IntraVoxel Incoherent Motion) parameters.    
-        </p> 
+        Welcome to my personal page. My name is Mbaimou Auxence NGREMMADJI. I am Postdoctoral Research Fellow at <a href="https://iadi.univ-lorraine.fr/"> IADI laboratory (CHRU Nancy, France)</a> since <b> 1 July 2025 </b>. I work on the development of numerical methods for simultaneous estimation of multiparametric 
+        quantitative Magnetic Resonance (MR) imaging maps using balanced Steady State Free Precession (bSSFP) MR sequence. I also focus on the development of multicontrast super-resolution methods. 
+        </p>
+         
+        <p>
+        I was Ph.D. candidate at University of Lorraine (Nancy, France), from <b> 1 October 2021 to 23 May 2025 </b>, where I worked at <a href="https://iadi.univ-lorraine.fr/"> IADI laboratory (CHRU Nancy, France)</a>. My contributions span the development of
+        super -resolution method, technique for the estimation of placental quantitative Magnetic Resonance (MR) imaging maps using the diffusion -weighted MR method called IVIM (IntraVoxel Incoherent Motion). I also 
+         worked on the investigation of ex vivo placental architecture using MR imaging.
+        </p>      
           
         <p>
-        Prior to the Ph.D. journey, I obtained a master degree in Mathematical Modeling at Sorbonne University (Paris, France) in 2019. I also hold a master degree in Mathematical Engineering
-        at Aix-Marseille University (Marseille, France) in 2018. I obtained a bachelor in Mathematics at Cheikh Anta Diop University (Dakar, Senegal) in 2015.     
+        Prior to the Ph.D. journey, I obtained a master degree in Mathematical Modeling at Sorbonne University (Paris, France) in <b> 2019</b>. I also hold a master degree in Mathematical Engineering
+        at Aix-Marseille University (Marseille, France), in <b> 2019</b>. I studied at Cheikh Anta Diop University, where I am graduated with a bachelor in Mathematics in <b> 2015</b>.      
         </p>
+
         <p>
-        I am interested in super-resolution reconstruction, motion correction, deep learning, machine learning, and medical imaging. I am also open to other domains. I welcome news opportunities.  
+        I am interested in using mathematical modeling tools in the medical imaging field. Especially, my interests include  super- resolution, image registration, Deep Learning and Machine Learning methods. I am also open to other domains. I welcome news opportunities.  
         </p>  
   
-  </section>
-
-  <section id="skills">
+      </section>
+    
+      <section id="skills">
         <h3>Skills</h3>
         <div class="skills-list">
           <span> Optimisation </span> <span>MRI</span> <span> Image Processing</span> <span> Deep Learning </span> <span>  Machine Learning</span> 
           <span>Python</span>  <span> PyTorch </span>  <span> Matlab</span>
           <span> R </span><span>Git</span><span>Docker</span>
         </div>
-  </section>
+      </section>
 
-  <section id="resume">
+      <section id="resume">
       <h3>Resume</h3>
       <p>
         Download my latest CV <a href="ngremmadji_resume.pdf" target="_blank">here</a>.
       </p>
-  </section>
+      </section>
 
-  <section id="projects">
+      <section id="contact">
+    <h3>Contact</h3>
+    <div class="contact-list">
+      <a href="mailto:oxmbaimou@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
+      <a href="https://github.com/MNgremmadji" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+      <a href="https://linkedin.com/in/ngremmadji" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+    
+    </div>
+    </section>
+    </div> 
+
+    <div class="right-column"> 
+
+      <section id="projects">
     <h3>Projects</h3>
     <ul>
       <li> <strong> Malaria Detection using Low-rank Adaption  </strong> </li>
@@ -235,20 +259,9 @@
     </ul>  
     <tr>
     </section>
-
-
-
-  <section id="contact">
-    <h3>Contact</h3>
-    <div class="contact-list">
-      <a href="mailto:oxmbaimou@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
-      <a href="https://github.com/MNgremmadji" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
-      <a href="https://linkedin.com/in/ngremmadji" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-    
-    </div>
-  </section>
-  </body>
-  <footer id="footer">
-    &copy; 2026 Mbaimou Auxence NGREMMADJI. All Rights Reserved.
+  </div>
+</body>
+<footer id="footer">
+    &copy; 2025 Mbaimou Auxence NGREMMADJI. All Rights Reserved.
 </footer>
- </html> 
+</html>
